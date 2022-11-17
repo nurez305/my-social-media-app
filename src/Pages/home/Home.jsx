@@ -2,7 +2,7 @@ import './home.scss'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div style={{backgroundColor: "lightblue", height: "100vh"}}>Home</div>
   )
 }
 
