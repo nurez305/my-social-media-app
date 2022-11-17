@@ -14,7 +14,7 @@ import RightBar from './components/rightBar/RightBar'
 import './style.scss'
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
-//import { AuthContext } from "./context/authContext";
+import { AuthContext } from "./context/authContext";
 //import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 
@@ -42,7 +42,7 @@ function App() {
     );
   };
 
-  const currentUser = true
+  const { currentUser } = useContext(AuthContext);
 
   const ProtectedRoute = ({ children }) => {
     if (!currentUser) {
@@ -57,9 +57,9 @@ function App() {
     {
       path: "/",
       element: (
-      <ProtectedRoute>
+      // <ProtectedRoute>
           <Layout />
-        </ProtectedRoute>
+        // </ProtectedRoute>
       ),
       children: [
         {
