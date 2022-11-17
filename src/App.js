@@ -28,7 +28,7 @@ const Layout = () => {
 
 function App() {
 
-  const currentUser = false
+  const currentUser = true
 
   const ProtectedRoute = ({ children }) => {
     if (!currentUser) {
