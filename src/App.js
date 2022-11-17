@@ -1,12 +1,12 @@
-import Home from "./Pages/home/Home";
+//import Home from "./Pages/home/Home";
 import Login from "./Pages/login/Login";
-import Profile from "./Pages/profile/Profile";
+//import Profile from "./Pages/profile/Profile";
 import Register from "./Pages/register/Register";
 import {
   createBrowserRouter,
   RouterProvider,
-  Outlet,
-  Navigate,
+  //Outlet,
+  //Navigate,
 } from "react-router-dom";
 
 function App() {
