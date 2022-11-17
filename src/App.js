@@ -1,6 +1,6 @@
-//import Home from "./Pages/home/Home";
+import Home from "./Pages/home/Home";
 import Login from "./Pages/login/Login";
-//import Profile from "./Pages/profile/Profile";
+import Profile from "./Pages/profile/Profile";
 import Register from "./Pages/register/Register";
 import {
   createBrowserRouter,
@@ -28,6 +28,22 @@ const Layout = () => {
 
 function App() {
   const router = createBrowserRouter([
+    {
+      path: "/",
+      element: (
+          <Layout />
+      ),
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/profile/:id",
+          element: <Profile />,
+        },
+      ],
+    },
     {
       path: "/login",
       element: <Login />,
