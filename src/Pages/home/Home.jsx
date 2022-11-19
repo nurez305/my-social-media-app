@@ -1,8 +1,8 @@
-import './home.scss'
+import React from 'react'
 
 function Home() {
   return (
-    <div style={{backgroundColor: "lightblue", height: "100vh"}}>Home</div>
+    <div>Home</div>
   )
 }
 

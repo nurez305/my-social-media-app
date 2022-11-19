@@ -1,10 +1,10 @@
-import { useContext, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { AuthContext } from "../../context/authContext";
+//import { useContext, useState } from "react";
+import { Link} from "react-router-dom";
+//import { AuthContext } from "../../context/authContext";
 import "./login.scss";
 
 function Login() {
-  const { login } = useContext(AuthContext);
+ 
   return (
     <div className="login">
       <div className="card">
