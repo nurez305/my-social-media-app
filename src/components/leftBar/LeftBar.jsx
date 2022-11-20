@@ -15,7 +15,7 @@ import Fund from "../../assets/13.png";
 
 function LeftBar() {
   return (
-    <div className="leftbar">
+    <div className="leftBar">
       <div className="container">
         <div className="menu">
           <div className="user">

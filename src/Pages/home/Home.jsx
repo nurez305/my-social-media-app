@@ -1,8 +1,8 @@
-import React from 'react'
+import './home.scss'
 
 function Home() {
   return (
-    <div>
+    <div className='home'>
       <h1>hello world</h1>
       <h1>hello world</h1>
       <h1>hello world</h1>
