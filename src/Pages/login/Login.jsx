@@ -1,9 +1,10 @@
-//import { useContext, useState } from "react";
+import { useContext } from "react";
 import { Link} from "react-router-dom";
-//import { AuthContext } from "../../context/authContext";
+import { AuthContext } from "../../context/authContext";
 import "./login.scss";
 
 function Login() {
+  const {login} = useContext(AuthContext);
  
   return (
     <div className="login">
@@ -31,7 +32,7 @@ function Login() {
               type="password"
               placeholder="Password"
             />
-            <button>Login</button>
+            <button onClick={login}>Login</button>
           </form>
         </div>
       </div>
