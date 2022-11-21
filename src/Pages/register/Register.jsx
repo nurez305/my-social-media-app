@@ -46,6 +46,13 @@ function Register() {
             />
             
             <button>Register</button>
+
+            <div className="not_register">
+            <span>Do you have an account?</span> 
+            <Link to="/login" style={{textDecoration: "none"}}>
+              Login Here
+              </Link>
+            </div>
           </form>
         </div>
       </div>

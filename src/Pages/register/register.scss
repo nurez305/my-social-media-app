@@ -1,5 +1,7 @@
+@import "../../style.scss";
+
 .register {
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(193, 190, 255);
     display: flex;
     align-items: center;
@@ -13,6 +15,16 @@
       border-radius: 10px;
       min-height: 350px;
       overflow: hidden;
+
+      @include mobile {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        }
+
+        @include tablet{
+          width: 90%;
+        }      
   
       .left {
         flex: 1;
@@ -25,17 +37,36 @@
         flex-direction: column;
         gap: 30px;
         color: white;
+
+        @include mobile {
+          padding: 0;
+        }
   
         h1 {
-          font-size: 50px;
+          font-size: 40px;
           line-height: 60px;
+
+          @include mobile {
+            display: flex;
+            // align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            margin-top: 15px;
+            }
         }
         
         p {
+          @include mobile {
+            display: none;
+            }
         }
   
         span {
           font-size: 14px;
+
+          @include mobile {
+            display: none;
+            }
         }
         
         button {
@@ -46,6 +77,10 @@
           color: rebeccapurple;
           font-weight: bold;
           cursor: pointer;
+
+          @include mobile {
+            display: none;
+            }
         }
       }
   
@@ -70,6 +105,7 @@
           border: none;
           border-bottom: 1px solid lightgray;
           padding: 10px 10px;
+          outline: none;
           }
           
           button {
@@ -80,6 +116,14 @@
             color: white;
             font-weight: bold;
             cursor: pointer;
+          }
+
+          .not_register{
+            display:  none;
+  
+            @include mobile {
+              display: block;
+              }
           }
         }
       }

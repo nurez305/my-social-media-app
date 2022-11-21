@@ -10,7 +10,7 @@ function Login() {
     <div className="login">
       <div className="card">
         <div className="left">
-          <h1>Hello World.</h1>
+          <h1>NURSAL SOCIAL</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
             alias totam numquam ipsa exercitationem dignissimos, error nam,
@@ -33,6 +33,13 @@ function Login() {
               placeholder="Password"
             />
             <button onClick={login}>Login</button>
+
+            <div className="not_register">
+            <span>Don't you have an account?</span> 
+            <Link to="/register" style={{textDecoration: "none"}}>
+              Register Here
+              </Link>
+            </div>
           </form>
         </div>
       </div>
