@@ -9,9 +9,11 @@ $themes: (
   ),
   dark: (
     textColor: whitesmoke,
-    bg: #222,
+    //bg: #222,
+    bg: rgb(4, 4, 70),
     logo: white,
-    bgSoft: #333,
+    //bgSoft: #333,
+    bgSoft: rgb(5, 5, 83),
     textColorSoft: lightgray,
     border: #444,
   ),
